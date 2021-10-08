@@ -5,6 +5,7 @@ import { config } from './config';
 import apm from 'elastic-apm-node';
 
 if (config.apmLogging) {
+  console.log(config);
   apm.start({
     serviceName: config.functionName,
     secretToken: config.apmSecretToken,
@@ -36,5 +37,5 @@ process.on('unhandledRejection', (err) => {
 try {
   runServer();
 } catch (err) {
-  LoggerService.error('Error while starting gRPC server', err);
+  LoggerService.error('Error while starting HTTP server', err);
 }
