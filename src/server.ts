@@ -5,7 +5,6 @@ import { config } from './config';
 import apm from 'elastic-apm-node';
 
 if (config.apmLogging) {
-  console.log(config);
   apm.start({
     serviceName: config.functionName,
     secretToken: config.apmSecretToken,
