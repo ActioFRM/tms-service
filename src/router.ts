@@ -1,5 +1,5 @@
 import Router from 'koa-router';
-import healthCheck from './controllers/healthcheck';
+import { healthCheck } from './controllers/healthcheck';
 import { monitorQuote, monitorTransfer } from './controllers/execute';
 
 const router = new Router();
