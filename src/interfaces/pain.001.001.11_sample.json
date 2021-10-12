@@ -1,0 +1,196 @@
+{
+  "TxTp": "pain.001.001.11",
+  "CstmrCdtTrfInitn": {
+    "MsgId": "$",
+    "GrpHdr": {
+      "MsgId": "$",
+      "CreDtTm": "$",
+      "NbOfTxs": "$",
+      "InitgPty": {
+        "Nm": "$",
+        "Id": {
+          "PrvtId": {
+            "DtAndPlcOfBirth": {
+              "BirthDt": "$",
+              "CityOfBirth": "$",
+              "CtryOfBirth": "$"
+            },
+            "Othr": {
+              "Id": "$",
+              "SchmeNm": {
+                "Prtry": "$"
+              }
+            }
+          }
+        },
+        "CtctDtls": {
+          "MobNb": "$"
+        }
+      }
+    },
+    "PmtInf": {
+      "PmtInfId": "$",
+      "PmtMtd": "$",
+      "ReqdAdvcTp": {
+        "DbtAdvc": {
+          "Cd": "$",
+          "Prtry": "$"
+        }
+      },
+      "ReqdExctnDt": {
+        "Dt": "$",
+        "DtTm": "$"
+      },
+      "Dbtr": {
+        "Nm": "$",
+        "Id": {
+          "PrvtId": {
+            "DtAndPlcOfBirth": {
+              "BirthDt": "$",
+              "CityOfBirth": "$",
+              "CtryOfBirth": "$"
+            },
+            "Othr": {
+              "Id": "$",
+              "SchmeNm": {
+                "Prtry": "$"
+              }
+            }
+          }
+        },
+        "CtctDtls": {
+          "MobNb": "$"
+        }
+      },
+      "DbtrAcct": {
+        "Id": {
+          "Othr": {
+            "Id": "$",
+            "SchmeNm": {
+              "Prtry": "$"
+            }
+          }
+        },
+        "Nm": "$"
+      },
+      "DbtrAgt": {
+        "FinInstnId": {
+          "ClrSysMmbId": {
+            "MmbId": "$"
+          }
+        }
+      },
+      "CdtTrfTxInf": {
+        "PmtId": {
+          "EndToEndId": "$"
+        },
+        "PmtTpInf": {
+          "CtgyPurp": {
+            "Prtry": "$"
+          }
+        },
+        "Amt": {
+          "InstdAmt": {
+            "Amt": "$",
+            "Ccy": "$"
+          },
+          "EqvtAmt": {
+            "Amt": {
+              "Amt": "$",
+              "Ccy": "$"
+            },
+            "CcyOfTrf": "$"
+          }
+        },
+        "ChrgBr": "$",
+        "CdtrAgt": {
+          "FinInstnId": {
+            "ClrSysMmbId": {
+              "MmbId": "$"
+            }
+          }
+        },
+        "Cdtr": {
+          "Nm": "$",
+          "Id": {
+            "PrvtId": {
+              "DtAndPlcOfBirth": {
+                "BirthDt": "$",
+                "CityOfBirth": "$",
+                "CtryOfBirth": "$"
+              },
+              "Othr": {
+                "Id": "$",
+                "SchmeNm": {
+                  "Prtry": "$"
+                }
+              }
+            }
+          },
+          "CtctDtls": {
+            "MobNb": "$"
+          }
+        },
+        "CdtrAcct": {
+          "Id": {
+            "Othr": {
+              "Id": "$",
+              "SchmeNm": {
+                "Prtry": "$"
+              }
+            }
+          },
+          "Nm": "$"
+        },
+        "Purp": {
+          "Cd": "$"
+        },
+        "RgltryRptg": {
+          "Dtls": {
+            "Tp": "$",
+            "Cd": "$"
+          }
+        },
+        "RmtInf": {
+          "Ustrd": "$"
+        },
+        "SplmtryData": {
+          "Envlp": {
+            "Doc": {
+              "Cdtr": {
+                "FrstNm": "$",
+                "MddlNm": "$",
+                "LastNm": "$",
+                "MrchntClssfctnCd": "$"
+              },
+              "Dbtr": {
+                "FrstNm": "$",
+                "MddlNm": "$",
+                "LastNm": "$",
+                "MrchntClssfctnCd": "$"
+              },
+              "DbtrFinSvcsPrvdrFees": {
+                "Ccy": "$",
+                "Amt": "$"
+              },
+              "Xprtn": "$"
+            }
+          }
+        }
+      }
+    },
+    "SplmtryData": {
+      "Envlp": {
+        "Doc": {
+          "InitgPty": {
+            "InitrTp": "$",
+            "Glctn": {
+              "Lat": "$",
+              "Long": "$"
+            }
+          }
+        }
+      }
+    }
+  }
+}
