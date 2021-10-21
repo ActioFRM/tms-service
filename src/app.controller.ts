@@ -3,9 +3,9 @@ import { LoggerService } from './utils';
 import { config } from './config';
 import axios from 'axios';
 import apm from 'elastic-apm-node';
-import { IPain001Message } from './interfaces/iPain001';
+import { Pain001V11Transaction } from './interfaces/iPain001';
 
-const sendToDataPreparation = async (data: IPain001Message) => {
+const sendToDataPreparation = async (data: Pain001V11Transaction) => {
   const resp = await axios.post(`${config.dataPreparationUrl}`, data, {
     auth: { username: config.dataPreparationUsername, password: config.dataPreparationPassword },
   });
@@ -20,7 +20,9 @@ export const monitorQuote = async (ctx: Context): Promise<Context> => {
   try {
     const request = (ctx.request.body as unknown) ?? JSON.parse('');
 
-    // await sendToDataPreparation(request);
+    const transaction: Pain001V11Transaction = new Pain001V11Transaction(request);
+
+    await sendToDataPreparation(transaction);
 
     ctx.status = 200;
     ctx.body = {
