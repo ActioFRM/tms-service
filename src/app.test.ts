@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from 'axios';
 import { Context } from 'koa';
-import path from 'path';
-import { monitorQuote, monitorTransfer } from '../../src/controllers/execute';
+import { monitorQuote, monitorTransfer } from './app.controller';
 
 const getMockRequest = () => {
   return JSON.parse(
@@ -10,7 +9,7 @@ const getMockRequest = () => {
   );
 };
 
-describe('Logic Service', () => {
+describe('TMS Service', () => {
   let postSpy: jest.SpyInstance;
 
   beforeEach(() => {

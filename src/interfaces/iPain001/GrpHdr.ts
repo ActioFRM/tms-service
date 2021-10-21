@@ -35,6 +35,6 @@ class InitgPty {
 export class GrpHdr {
   MsgId = '';
   CreDtTm = '';
-  NbOfTxs = '';
+  NbOfTxs = 0;
   InitgPty: InitgPty = new InitgPty();
 }
